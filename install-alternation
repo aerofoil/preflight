@@ -15,5 +15,6 @@ echo "  -----------------------------[ screen $STEP of $STEPS ]-----------------
   	https://github.com/Aerofoil/alternation
 
 if prompt "  Would you like to install Alernation?"; then
-	sudo git clone  
+	sudo git clone https://github.com/aerofoil/alternation ~/.config/git/alternation
+	cd alternation && sudo ./install.sh
 fi
