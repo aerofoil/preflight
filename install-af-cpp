@@ -12,6 +12,6 @@ echo "  -----------------------------[ screen $STEP of $STEPS ]-----------------
 
   Note: additional packages listed as dependencies will also be installed."
 
-if prompt "  Would you like to install Alernation?"; then
+if prompt "  Would you like to install af-cpp?"; then
 	sudo apt-get install -y af-cpp 
 fi
