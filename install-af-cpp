@@ -1,0 +1,17 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  INSTALL AEROFOIL C++ DEVELOPMENT TOOLS
+  --------------------
+  By default, Aerofoil does not come with C++ Development Tools.
+  Would you like to install C++ Dev tools now? If you choose to do 
+  this, the following package will be installed:
+
+      af-cpp
+
+  Note: additional packages listed as dependencies will also be installed."
+
+if prompt "  Would you like to install Alernation?"; then
+	sudo apt-get install -y af-cpp 
+fi

@@ -1,0 +1,17 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  INSTALL CAD SUPPORT
+  --------------------
+  By default, Aerofoil does not come with Computer Aided Design tools.
+  Would you like to install CAD tools now? If you choose to do 
+  this, the following package will be installed:
+
+      af-cad
+
+  Note: additional packages listed as dependencies will also be installed."
+
+if prompt "  Would you like to install CAD?"; then
+	sudo apt-get install -y af-cad
+fi

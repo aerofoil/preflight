@@ -1,0 +1,17 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  INSTALL AEROFOIL GRAPHICS TOOLS
+  --------------------
+  By default, Aerofoil does not come with photography and graphics tools.
+  Would you like to install these now? If you choose to do 
+  this, the following package will be installed:
+
+      af-graphics
+
+  Note: additional packages listed as dependencies will also be installed."
+
+if prompt "  Would you like to install af-graphics?"; then
+	sudo apt-get install -y af-graphics 
+fi

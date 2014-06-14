@@ -1,0 +1,17 @@
+clear
+
+echo "  -----------------------------[ screen $STEP of $STEPS ]----------------------------
+
+  INSTALL AUDIO SUPPORT
+  --------------------
+  By default, Aerofoil does not come with audio players.
+  Would you like to install audio players now? If you choose to do 
+  this, the following package will be installed:
+
+      af-audio
+
+  Note: additional packages listed as dependencies will also be installed."
+
+if prompt "  Would you like to install af-audio?"; then
+	sudo apt-get install -y af-audio
+fi
